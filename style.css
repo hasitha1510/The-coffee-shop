@@ -1,0 +1,739 @@
+*{
+    margin:0;
+    border:border-box;
+    
+}
+
+
+
+
+.background{
+    background-image: url("bg.png");
+    background-size: cover;
+    height:100vh;
+    width:100vw;
+}
+
+
+/*navbar*/
+.navbar{
+    height:60px;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+
+.nav-logo{
+    height:65px;
+    width:150px;
+    
+}
+
+.logo{
+    background-image: url("logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:60px;
+    width:100%;
+}
+
+.navbar-2{
+    height:60px;
+    width:40%;
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.About-us{
+    height:60px;
+    width:100px;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    
+}
+
+.Products{
+    height:60px;
+    width:60px;
+    position:relative;
+    top:20px;
+    color:white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.Sign-in{
+    color:white;
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.reviews{
+    font-size: large;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.search{
+    position:absolute;
+    right:30px;
+}
+.search-select{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    border-radius:40px;
+    height:45px;
+    width:45px;
+    background-color:white;
+    color:black;
+}
+
+.search-container {
+    position: relative;
+}
+.placeholder {
+    position: absolute;
+    top: 0;
+    left: -250px; /* Starts hidden outside the viewport */
+    width: 200px;
+    height: 100px;
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: left 0.3s ease; /* Smooth sliding effect */
+}
+.placeholder.show {
+    left: 0; /* Moves the placeholder into view */
+}
+
+.border{
+    border:5px solid transparent;
+}
+.border:hover{
+    border-color:#E16A54;
+}
+
+.cart{
+    height:45px;
+    width:45px;
+    background-color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:50%;
+    
+}
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    background-color:#a68e6f;
+    
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+/*hero-section*/
+
+.hero-image{
+    background-image: url("main.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    height:90vh;
+    width:50vw; 
+    position:absolute;
+    right:70px;  
+    bottom:30px;
+}
+
+.heading{
+    position:absolute;
+    left:50px;
+    top:210px;
+    height:60px;
+    width:60px;
+    text-transform:uppercase;
+    color:#F39E60;
+    font-size: larger;
+
+}
+
+.para{
+    color:white;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    position:absolute;
+    top:255px;
+    left:100px;
+}
+
+.shopnow{
+    height:20px;
+    width:90px;
+    background-color:white;
+    position:absolute;
+    top:290px;
+    left:169px;
+}
+
+.shopping{
+    color:black;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shopnow:hover{
+    background-color:#a68e6f ;
+}
+
+/*sections*/
+section {
+    padding: 30px;
+    margin: 20px 0;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    text-align:center;
+}
+
+.one-aboutus{
+    margin-top: 25px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height:300px;
+    width:90vw;
+    border-radius:20px;
+    padding:10px;
+    background-color:#a68e6f;
+}
+
+
+.img{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image{
+    
+    height:40vh;
+    width:40vw;
+    background-image: url("about.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 25px;
+}
+
+.info{
+    padding:30px;
+    text-align: justify;
+
+}
+
+/*products*/
+
+.two{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.shop-section{
+    display:flex;
+    justify-content: space-evenly;
+    background-color:#a68e6f;
+    flex-wrap:wrap;
+    margin-bottom:150px;
+    margin-top:20px;
+    height : 1100px;
+    border-radius: 25px;
+
+}
+
+.box{
+    height:400px;
+    width:30%;
+    border:2px solid black;
+    background-color: white;
+    padding:20px 0px 20px;
+    background-color:#f4f4f4;
+    margin-top: 50px;
+    border-radius:25px;
+}
+
+.box-image{
+    height:310px;
+    padding-left: 50px;
+    padding-top: 10px;
+
+}
+.box-img{
+    height:300px;
+    background-size:contain;
+    background-repeat: no-repeat;
+
+}
+
+.box-content{
+    margin-left: 15px;
+    margin-right: 10px;
+}
+
+.product-link{
+    color:black;
+}
+
+.product-link:hover{
+   background-color:#a68e6f;
+}
+
+/*reviews*/
+
+.three{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.review-section{
+    margin-top:40px;
+    display:flex;
+    justify-content: space-evenly;
+    background-color:#a68e6f;
+    flex-wrap:wrap;
+    margin-bottom:90px;
+    height : 500px;
+    border-radius: 25px;
+
+}
+
+.review-box{
+    height:350px;
+    width:30%;
+    border:2px solid black;
+    background-color: white;
+    padding:20px 0px 20px;
+    margin-top: 50px;
+    border-radius:25px;
+}
+
+
+
+.rev-image{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+    
+    
+}
+
+.rev-image1{
+    height:210px;
+    padding-left: 100px;
+    padding-top: 10px;
+    
+    
+}
+
+.rating{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top:10px;
+}
+
+/*signin*/
+
+.back-signin{
+    background-image:url("footer-bg.jpg");
+    height:500px;
+    width:100%;
+    background-size:cover;
+    border-radius:25px;
+    margin-top:20px;
+    margin-bottom:20px;
+
+}
+
+.signin-form{
+    height:300px;
+    width:300px;
+    background-color:#a68e6f;
+    border-radius: 25px;
+    position:relative;
+    left:950px;
+    top:80px;
+    
+}
+
+.signin-elements{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%; /* 70% height of the parent container */
+    padding:25px 0px;/* Add some space above and below */
+}
+
+/*footer*/
+.footer-1{
+    height:100px;
+    width:100%;
+    margin-top: 20px;
+    background-color:#d2b58f ;
+    border-radius: 15px;
+}
+
+
+.footer-content{
+    height:50px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center ;
+    margin-top: 10px;
+}
+
+.social_media{
+    height:30px;
+    width:100%;/*so that the icons can be in the center of the div*/
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    gap:5px;/*gap is used to create space between icons*/ 
+}
+
+
+
+/* ============================= */
+/*   SEARCH & CART FIXED LAYOUT  */
+/* ============================= */
+
+/* container for search and cart */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  right: 30px;
+}
+
+
+.nav-icons {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* or space-between if you want spacing */
+  gap: 15px; /* spacing between search and cart */
+  margin-right: 30px; /* optional - moves icons inward */
+}
+
+/* search wrapper: button + input */
+.search-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+/* search input: hidden by default */
+.search-wrapper input {
+  width: 0;
+  opacity: 0;
+  border: none;
+  outline: none;
+  height: 40px;
+  border-radius: 25px;
+  padding: 0 10px;
+  font-size: 15px;
+  transition: width 0.4s ease, opacity 0.3s ease;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  background-color: white;
+  position: absolute;
+  right: 45px; /* attaches to the left of the button */
+}
+
+/* expanded (active) state */
+.search-wrapper.active input {
+  width: 200px;
+  opacity: 1;
+}
+
+/* search button */
+.search-btn {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: white;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: relative;
+  z-index: 2;
+}
+
+.search-btn:hover {
+  background-color: #f0e6dc;
+}
+
+/* keep cart aligned */
+.cart {
+  height: 45px;
+  width: 45px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+
+/* responsive tweaks */
+@media (max-width: 600px) {
+  .search-wrapper.active input {
+    width: 150px;
+  }
+}
+
+
+/* cart badge styles */
+.nav-icons .cart {
+  position: relative; /* containment for absolute-positioned badge */
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* the little red badge */
+#cart-count.cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 20px;
+  height: 20px;
+  padding: 0 6px;         /* allows for 2+ digit numbers */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  background: #ff3b30;    /* Amazon-like red */
+  border-radius: 999px;   /* make it circular */
+  box-shadow: 0 1px 2px rgba(0,0,0,0.25);
+  border: 2px solid white; /* small white border for separation */
+  transform-origin: center;
+  transform: translateZ(0);
+  transition: transform .12s ease, opacity .12s ease;
+  opacity: 1;
+  pointer-events: none; /* not interactive */
+}
+
+/* hide the badge when value is zero (JS will also toggle) */
+#cart-count.cart-badge.hidden {
+  opacity: 0;
+  transform: scale(.6);
+  pointer-events: none;
+}
+
+/* ---------------- Search suggestions (consolidated & fixed sizing) ---------------- */
+
+.search-wrapper {
+  position: relative;
+}
+
+.search-suggestions {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  left: auto;
+  width: 360px;
+  max-width: 90vw;
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  border-radius: 8px;
+  z-index: 50;
+  overflow: hidden;
+  display: none;
+}
+
+.search-wrapper.suggestions-open .search-suggestions {
+  display: block;
+}
+
+.search-suggestions .item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-height: 360px;
+  overflow-y: auto;
+}
+
+.search-suggestions .suggestion {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  padding: 10px;
+  height: 110px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border-bottom: 1px solid #f2f2f2;
+  background: #fff;
+}
+
+.search-suggestions .suggestion:last-child {
+  border-bottom: none;
+}
+
+.search-suggestions .suggestion .thumb {
+  width: 96px;
+  height: 90px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  display: inline-block;
+}
+
+.search-suggestions .suggestion .thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.search-suggestions .suggestion .meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  overflow: hidden;
+}
+
+.search-suggestions .suggestion .meta .title {
+  font-weight: 600;
+  font-size: 15px;
+  color: #111;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.search-suggestions .suggestion .meta .price {
+  font-size: 13px;
+  color: #666;
+  margin-top: 6px;
+}
+
+.search-suggestions .suggestion:hover,
+.search-suggestions .suggestion[aria-selected="true"] {
+  background: #f7f7f7;
+}
+
+.search-suggestions .empty {
+  padding: 12px;
+  color: #777;
+  text-align: center;
+  font-size: 13px;
+}
+
+.product-highlight {
+  box-shadow: 0 6px 20px rgba(255,153,0,0.18);
+  transition: box-shadow .18s ease;
+}
+
+@media (max-width: 480px) {
+  .search-suggestions {
+    left: 6px;
+    right: 6px;
+    width: auto;
+    max-width: calc(100% - 12px);
+  }
+  .search-suggestions .suggestion {
+    height: 96px;
+  }
+  .search-suggestions .suggestion .thumb {
+    width: 84px;
+    height: 76px;
+  }
+}
+/*<div class="background">
+            <!--navbar-->
+            <!-- ======== NAVBAR START ======== -->
+             <div class="navbar">
+                <!-- Left: Logo -->
+                 <div class="nav-logo">
+                    <div class="logo"></div>
+                </div>
+                <div class="navbar-2">
+                    <div class="About-us"><a href="#aboutus">About us</a></div>
+                    <div class="Products"><a href="#products">Products</a></div>
+                    <div class="Sign-in"><a href="#sign-in">Sign-in</a></div>
+                    <div class="reviews"><a href="#reviews">Reviews</a></div>
+                </div>
+                <div class="nav-icons">
+                    <div class="search-wrapper">
+                        <input type="text" id="search-input"class="search-input" placeholder="Search products..." />
+                        <div class="search-btn border">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="cart border">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="cart-badge" aria-hidden="true">0</span>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            
+           
+
+            <!--hero section-->
+            <div class="hero-image"></div>
+
+            <div class="heading">
+                <h1><pre>start your day with cofee</pre></h1>
+              
+            </div>
+            <div class="para">
+                <h4>Coffee was discovered by goats!</h4>
+                    
+            </div>
+            <div class="shopnow">
+                <a class="shopping" href="#products">Shop now</a>
+                
+            </div>
+           
+
+            
+            
+            
+        </div>*/
+        

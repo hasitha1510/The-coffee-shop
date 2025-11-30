@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign-up</title>
+    <link rel="stylesheet"href="style(signup).css">
+</head>
+<body><!--we can use it for flex property-->
+    <div class="signup">
+        
+        <div class="signup1"><!--outer part of the form used to move the whole form-->
+            <div class="heading"><h3>create an account or</h3><a href="index.html">sign in</a></div>
+            <div class="signup2"><!--div is used to store and move elements inside the  signup form such as email,password etc-->
+                
+                <form>
+                    <div class="input-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" placeholder="Enter your email" required ><!--required is used to make sure there are no null values-->
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <label for="password">Password:</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <br>
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember">
+                        <label for="remember">Remember Me</label>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn">Sign up</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

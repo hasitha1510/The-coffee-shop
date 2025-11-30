@@ -1,0 +1,56 @@
+/*signup html page*/
+
+body{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-image: url("signup\ html\ bg.jpg");
+    background-size: cover; 
+    background-color: rgba(0, 0, 0, 0.5); /* Example: Semi-transparent black */
+    background-blend-mode: overlay; /* Blends color with image */
+    padding:200px 150px 200px 150px;/*top right bottom left*/
+}
+
+
+.heading{
+    padding:20px;
+}
+
+.signup1{
+    position:relative;
+    top:70px;
+    background-color: #f4f4f4;
+    border-radius: 20px;/*to round the corners*/
+    text-align: center;
+}
+
+
+
+.signup2{
+    
+    background-color: #f4f4f4;
+    height:250px;
+    width:350px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    border-radius: 20px;/*to round the corners of signup2 div*/
+    padding:0px 0px 15px 0px;
+}
+
+a{/*for signin anchor tag decoration*/
+    text-decoration: none;
+    font-size: larger;
+    color:#9C6F44;
+}
+
+button:hover{/*for signup button*/
+    background-color: #a68e6f;
+}
+
+h3{/*for create account statement*/
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
+}
+

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The cofee corner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"href="style.css">
+
+</head>
+</head>
+<body>
+    <header>
+        <div class="background">
+            <!--navbar-->
+            <!-- ======== NAVBAR START ======== -->
+             <div class="navbar">
+                <!-- Left: Logo -->
+                 <div class="nav-logo">
+                    <div class="logo"></div>
+                </div>
+                <div class="navbar-2">
+                    <div class="About-us"><a href="#aboutus">About us</a></div>
+                    <div class="Products"><a href="#products">Products</a></div>
+                    <div class="Sign-in"><a href="#sign-in">Sign-in</a></div>
+                    <div class="reviews"><a href="#reviews">Reviews</a></div>
+                </div>
+                <div class="nav-icons">
+                    <div class="search-wrapper">
+                        <input type="text" id="search-input"class="search-input" placeholder="Search products..." />
+                        <div class="search-btn border">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                    </div>
+                    <div class="cart border">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span id="cart-count" class="cart-badge" aria-hidden="true">0</span>
+                    </div>
+                    
+
+                </div>
+            </div>
+
+            
+           
+
+            <!--hero section-->
+            <div class="hero-image"></div>
+
+            <div class="heading">
+                <h1><pre>start your day with cofee</pre></h1>
+              
+            </div>
+            <div class="para">
+                <h4>Coffee was discovered by goats!</h4>
+                    
+            </div>
+            <div class="shopnow">
+                <a class="shopping" href="#products">Shop now</a>
+                
+            </div>
+           
+
+            
+            
+            
+        </div>
+    </header>
+    <main>
+        <!--sections-->
+        <div class="sections">
+            <section id="aboutus">
+                <h2>ABOUT US</h2>
+                <div class="one-aboutus">
+                    <div class="img"><div class="image"></div></div>
+                    <div class="info">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel assumenda iure quas eius saepe quidem quis numquam, iusto molestias harum blanditiis autem cum doloremque odit necessitatibus veritatis doloribus ratione delectus?
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur omnis ad ex aliquam distinctio? Consequuntur enim voluptatem veniam officiis obcaecati quibusdam dolorem iste? Vitae provident saepe dignissimos ipsa at architecto.
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio voluptatum consequatur saepe animi sapiente quasi inventore veniam ratione cupiditate, rem repellendus nihil velit unde optio sequi debitis. A, labore aliquam.
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate doloremque facilis et ipsum? Ea tempora tempore quas consectetur magnam eaque aut dolorem voluptates enim eveniet, voluptatibus cumque, sequi harum dignissimos!
+                        </p>
+                    </div>
+
+                </div>
+
+                
+                
+                
+            </section>
+            <!--products-->
+            <section id="products">
+                <h2>PRODUCTS</h2>
+                <div class="two">
+                    <div class="shop-section">
+                        <div class="box1 box">
+                            <div class="box-content">
+                                <div class="box-image"><div class="box-img" style="background-image: url('p1.png');"></div></div>
+                                <h3>Arabian coffee beans</h3>
+                                <h4>$15</h4>
+                                
+                                <button onclick="addToCart('Arabian Coffee Beans', 'p1.png', 15,this)">ADD TO CART</button>
+                            </div>
+                            
+
+                        </div>
+                        <div class="box2 box">
+                            <div class="box-content">
+                                <div class="box-image"><div class="box-img" style="background-image: url('p1.png');"></div></div>
+                                <h3>Arab coffee beans</h3>
+                                <h4>$15</h4>
+                                
+                                <button onclick="addToCart('Arabian Coffee Beans', 'p1.png', 15, this)">ADD TO CART</button>
+
+                            </div>
+                        </div>
+                        <div class="box3 box">
+                            <div class="box-content">
+                                <div class="box-image"><div class="box-img" style="background-image: url('p3.png');"></div></div>
+                                <h3>German coffee beans</h3>
+                                <h4>$20</h4>
+                                
+                                <button onclick="addToCart('German Coffee Beans', 'p3.png', 20,this)">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="box4 box">
+                            <div class="box-content">
+                                <div class="box-image"><div class="box-img" style="background-image: url('p4.png');"></div></div>
+                                <h3>French coffee beans</h3>
+                                <h4>$22</h4>
+                                
+                                <button onclick="addToCart('French Coffee Beans', 'p4.png', 22,this)">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="box5 box">
+                            <div class="box-content">
+                                <div class="box-image"><div class="box-img" style="background-image: url('p5.png');"></div></div>
+                                <h3>English coffee beans</h3>
+                                <h4>$17</h4>
+                                
+                                <button onclick="addToCart('English Coffee Beans', 'p5.png', 17,this)">ADD TO CART</button>
+                            </div>
+                        </div>
+                        <div class="box6 box">
+                            <div class="box-content">
+                                <div class="box-image"><div class="box-img" style="background-image: url('p6.png');"></div></div>
+                                <h3>Russian coffee beans</h3>
+                                <h4>$19</h4>
+                                
+                                <button onclick="addToCart('Russian Coffee Beans', 'p6.png', 19,this)">ADD TO CART</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            <!--reviews-->
+            <section id="reviews">
+                <h2>REVIEWS</h2>
+                <div class="three">
+                    <div class="review-section">
+                       <div class="review1 review-box">
+                         <div class="review-content">
+                            <div class="rev-image1"><div class="rev-image" style="background-image:url('rev1.jpg');"></div></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Velit laboriosam quo voluptas, 
+                            quisquam nemo cum quasi impedit numquam, 
+                            tempore non accusantium sit assumenda! 
+                            Ducimus beatae perspiciatis dicta suscipit, molestiae incidunt.</p>
+                            <div class="rating">
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                            </div>
+                        </div>
+
+                        
+                    </div>
+                    <div class="review2 review-box ">
+                        <div class="review-content">
+                            <div class="rev-image1"><div class="rev-image" style="background-image:url('rev2.jpg');"></div></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Velit laboriosam quo voluptas, 
+                            quisquam nemo cum quasi impedit numquam, 
+                            tempore non accusantium sit assumenda! 
+                            Ducimus beatae perspiciatis dicta suscipit, molestiae incidunt.</p>
+                            <div class="rating">
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="review3 review-box">
+                        <div class="review-content">
+                            <div class="rev-image1"><div class="rev-image" style="background-image:url('rev3.jpg');"></div></div>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                             Velit laboriosam quo voluptas, 
+                            quisquam nemo cum quasi impedit numquam, 
+                            tempore non accusantium sit assumenda! 
+                            Ducimus beatae perspiciatis dicta suscipit, molestiae incidunt.</p>
+                            <div class="rating">
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                                <span style="color: gold;">⭐</span>
+                                
+                            </div>
+
+                        </div>
+                    </div>
+                    </div>
+                    
+
+                    
+
+                </div>
+            </section>
+            <section id="sign-in">
+                <h3>SIGN-IN</h3>
+                <div class="four">
+                    <div class="back-signin"><!--for background image-->
+                        <div class="signin-form"><!--for sign in form-->
+                            <div class="signin-elements"><!--to move elements inside the sign in box-->
+                                
+                                <form>
+                                    <div class="input-group">
+                                        <label for="email">Email:</label>
+                                        <input type="email" id="email" placeholder="Enter your email" required >
+                                    </div>
+                                    <br>
+                                    <div class="input-group">
+                                        <label for="password">Password:</label>
+                                        <input type="password" id="password" placeholder="Enter your password" required>
+                                    </div>
+                                    <br>
+                                    <div class="remember-me">
+                                        <input type="checkbox" id="remember">
+                                        <label for="remember">Remember Me</label>
+                                    </div>
+                                    <br>
+                                    <button type="submit" class="btn">Sign In</button>
+                                    <br><br>
+                                    <p class="signup-link">Don't have an account?<br> <a href="signup.html">Sign Up</a></p><!--in signup link place the link of signup page-->
+                                </form>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    
+                </div>
+            </section>
+
+
+            
+        </div>
+    </main>
+    <footer>
+        <div class="footer-1"><!--outer part of footer-->
+            <div class="footer-content"><!--to position the heading correctly-->
+                <h3>Connect with us through</h3>
+                
+            </div>
+            <div class="social_media"><!--to use flex property-->
+                <div class="symbol1">
+                    <div class="insta-symbol">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </div>
+                <br><br><br>
+                <div class="symbol2">
+                    <div class="fb-symbol">
+                        <i class="fa-brands fa-square-facebook"></i>
+                    </div>
+                </div>
+                <div class="symbol3">
+                    <div class="twitter-symbol">
+                        <i class="fa-brands fa-square-twitter"></i>
+                    </div>
+                </div>
+                <div class="symbol4">
+                    <div class="linkedin-symbol">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+            
+            
+            
+        
+
+        
+                 
+        
+    </footer>
+
+    
+   </div>
+    
+    
+    <script src="main.js"></script>
+</body>
+</html>

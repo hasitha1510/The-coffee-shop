@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkout — The Coffee Corner</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="checkout.css">
+</head>
+
+<body>
+  <header class="chk-header">
+    <a href="cart.html" class="back-btn">
+      ← Back to Cart
+    </a>
+    <h1>Checkout</h1>
+  </header>
+
+  <main class="checkout-container">
+    <!-- LEFT: FORM -->
+    <section class="checkout-form">
+      <h2>Shipping Information</h2>
+
+      <form id="checkout-form">
+        <label>Full Name
+          <input type="text" id="full-name" required>
+        </label>
+
+        <label>Email
+          <input type="email" id="email" required>
+        </label>
+
+        <label>Phone Number
+          <input type="tel" id="phone" required>
+        </label>
+
+        <label>Address
+          <input type="text" id="address" required>
+        </label>
+
+        <label>City
+          <input type="text" id="city" required>
+        </label>
+
+        <label>Postal Code
+          <input type="text" id="zip" required>
+        </label>
+
+        <h2 style="margin-top:25px;">Payment Method</h2>
+
+        <div class="payment-methods">
+          <label class="pm-option">
+            <input type="radio" name="payment" value="cod" checked>
+            <span>Cash on Delivery</span>
+          </label>
+
+          <label class="pm-option">
+            <input type="radio" name="payment" value="card">
+            <span>Credit / Debit Card</span>
+          </label>
+        </div>
+
+        <div id="card-details" class="hidden">
+          <label>Card Number
+            <input type="text" maxlength="16" id="card-number">
+          </label>
+
+          <label>Expiry Date
+            <input type="month" id="card-expiry">
+          </label>
+
+          <label>CVV
+            <input type="password" maxlength="3" id="card-cvv">
+          </label>
+        </div>
+      </form>
+    </section>
+
+    <!-- RIGHT: ORDER SUMMARY -->
+    <aside class="summary">
+      <h2>Order Summary</h2>
+
+      <div id="order-items"></div>
+
+      <div class="summary-row"><span>Subtotal</span><span id="sum-subtotal">$0.00</span></div>
+      <div class="summary-row"><span>Shipping</span><span id="sum-shipping">$0.00</span></div>
+      <div class="summary-row total"><span>Total</span><span id="sum-total">$0.00</span></div>
+
+      <button id="place-order" class="place-order-btn">Place Order</button>
+    </aside>
+  </main>
+
+  <script src="checkout.js"></script>
+</body>
+</html>

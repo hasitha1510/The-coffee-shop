@@ -1,0 +1,150 @@
+:root {
+  --accent:#a68e6f;
+  --accent-dark:#8b7256;
+  --text-dark:#2b2b2b;
+  --text-light:#6f6f6f;
+  --bg:#f4f1ed;
+  --card:#ffffff;
+  --radius:16px;
+  --shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+body {
+  margin:0;
+  font-family:"Inter",sans-serif;
+  background:var(--bg);
+  color:var(--text-dark);
+}
+
+.chk-header {
+  background:linear-gradient(90deg,var(--accent),var(--accent-dark));
+  color:#fff;
+  padding:20px 28px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  box-shadow:0 4px 18px rgba(0,0,0,0.18);
+}
+
+.chk-header h1 {
+  margin:0;
+  font-size:20px;
+}
+
+.back-btn {
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+}
+
+.checkout-container {
+  max-width:1250px;
+  margin:40px auto;
+  padding:0 20px;
+  display:grid;
+  grid-template-columns:1fr 350px;
+  gap:30px;
+}
+
+.checkout-form {
+  background:var(--card);
+  padding:25px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.checkout-form h2 {
+  margin-top:0;
+  margin-bottom:15px;
+  font-size:20px;
+}
+
+.checkout-form label {
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+  margin-bottom:14px;
+  font-weight:600;
+}
+
+.checkout-form input {
+  padding:12px;
+  border:1px solid #ddd;
+  border-radius:12px;
+  background:#faf8f6;
+  font-size:15px;
+}
+
+.payment-methods {
+  display:flex;
+  flex-direction:column;
+  gap:12px;
+  margin-top:10px;
+}
+
+.pm-option {
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight:600;
+  cursor:pointer;
+}
+
+.hidden {
+  display:none;
+}
+
+.summary {
+  background:var(--card);
+  padding:25px;
+  border-radius:var(--radius);
+  box-shadow:var(--shadow);
+}
+
+.summary h2 {
+  margin:0 0 16px 0;
+  font-size:20px;
+  font-weight:700;
+}
+
+.summary-row {
+  display:flex;
+  justify-content:space-between;
+  margin:8px 0;
+  font-size:15px;
+}
+
+.total {
+  font-size:22px;
+  font-weight:800;
+  margin-top:15px;
+}
+
+.place-order-btn {
+  width:100%;
+  margin-top:16px;
+  padding:14px;
+  background:var(--accent);
+  border:none;
+  color:white;
+  font-size:16px;
+  font-weight:700;
+  border-radius:12px;
+  cursor:pointer;
+}
+
+.place-order-btn:hover {
+  background:var(--accent-dark);
+}
+
+#order-items {
+  margin-bottom:25px;
+}
+
+.order-item {
+  display:flex;
+  justify-content:space-between;
+  margin-bottom:10px;
+  font-size:15px;
+  color:var(--text-light);
+}
